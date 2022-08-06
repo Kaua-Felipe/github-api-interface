@@ -1,0 +1,97 @@
+#main-content {
+    padding: 0 10%;
+    margin-top: 30px;
+}
+#main-content header {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+}
+#main-content header h1 {
+    margin-bottom: 80px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 34.5%;
+    border-bottom: solid #ffffff71 1px;
+    padding-bottom: 10px;
+}
+#main-content header strong {
+    width: 62.8%;
+    height: 84px;
+    border-bottom: solid #ffffff71 1px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.container-profile {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.container {
+    width: 400px;
+    flex-grow: 0;
+}
+.img-perfil {
+    background-color: #111111;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+}
+.img-perfil img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 5px;
+}
+.bio {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #111111;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 30px;
+}
+.bio h2 {
+    font-size: 23px;
+}
+.container2 {
+    flex-grow: 1;
+    width: 100%;
+    margin-left: 30px;
+}
+.repositorios {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #111111;
+}
+.repositorios header {
+    width: 100%;
+    margin-bottom: 40px;
+}
+.repositorios header div h2 {
+    margin-bottom: 5px;
+    font-size: 23px;
+}
+.repositorios header div div, .bio div {
+    background-color: #ffffff71;
+    width: 100%;
+    height: 0.07px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}

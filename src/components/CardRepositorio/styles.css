@@ -1,0 +1,20 @@
+.card {
+    background-color: #d8d0cc;
+    background-color: transparent;
+    color: #111;
+    color: #d8d0cc;
+    color: #71b7ff;
+    border: solid #d8d0cc62 1px;
+    border-radius: 7px;
+    min-width: 48%;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.card p {
+    white-space: nowrap;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+}
