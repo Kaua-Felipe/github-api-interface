@@ -19,7 +19,7 @@
 #main-content header strong {
     width: 62.8%;
     height: 84px;
-    border-bottom: solid #ffffff71 1px;
+    /* border-bottom: solid #ffffff71 1px; */
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -81,6 +81,13 @@
 .infos .blog {
     width: 100%;
 }
+.infos .blog a {
+    text-decoration: none;
+    color: #71b7ff;
+}
+.infos .blog a:hover {
+    text-decoration: underline;
+}
 .container2 {
     flex-grow: 1;
     width: 100%;
@@ -96,7 +103,15 @@
     width: 100%;
     margin-bottom: 40px;
 }
-.repositorios header div h2 {
+.container-header-repos {
+    width: 100%;
+}
+.header-repos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;}
+.header-repos h2 {
     margin-bottom: 5px;
     font-size: 23px;
 }

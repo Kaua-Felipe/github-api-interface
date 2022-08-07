@@ -2,8 +2,38 @@ import { CardRepositorio } from "../CardRepositorio"
 import "./styles.css"
 
 export function DashBoard({ userData, repos }) {
-    console.log(userData.public_repos)
+    let blog
+    let blogExist
     if(userData != "") {
+        let separarDate = userData.created_at.toString().split(["T"])[0].split("-")
+        let year = separarDate[0]
+        let month = separarDate[1]
+        let day = separarDate[2]
+        let dataCriacaoPerfil = `${day}/${month}/${year}`
+
+        if(userData.blog != "") {
+            blogExist = true
+            if(
+                userData.blog.includes("https") || 
+                userData.blog.includes("http") || 
+                userData.blog.includes("www")
+            ) {
+                blog = userData.blog
+            } else {
+                let url_blog = "https://"
+                url_blog += userData.blog
+                blog = url_blog
+            }
+        } else {
+            blogExist = false
+        }
+        let location
+        if(userData.location == null) {
+            location = "Sem localização"
+        } else {
+            location = userData.location
+        }
+
         return (
             <main id="main-content">
                 <header>
@@ -18,25 +48,34 @@ export function DashBoard({ userData, repos }) {
                         <div className="bio">
                             <h2>Bio do Usuário</h2>
                             <div className="row-separator"></div>
-                            <p>{userData.bio}</p>
+                            <p>{userData.bio != null ? userData.bio : "O usuário não preencheu a sua Bio"}</p>
                         </div>
                         <div className="infos">
                             <h2>Informações</h2>
                             <div className="row-separator"></div>
                             <div className="location">
-                                <span>Localização - {userData.location} </span>
+                                <span>Localização - {location} </span>
                             </div>
                             <div className="blog">
-                                <span>Blog - <a href={userData.blog} target="_blank">{userData.blog}</a></span>
+                                <span>
+                                    Blog - 
+                                    {
+                                        blogExist == true ? <a href={blog} target="_blank"> {blog}</a> : " Sem blog"
+                                    }
+                                </span>
                             </div>
                             <p>{userData.followers} seguidores . {userData.following} seguindo</p>
+                            <p>Perfil criado em: {dataCriacaoPerfil}</p>
                         </div>
                     </div>
                     <div className="container2">
                         <div className="repositorios">
                             <header>
-                                <div>
-                                    <h2>Repositórios</h2>
+                                <div className="container-header-repos">
+                                    <div className="header-repos">
+                                        <h2>Repositórios</h2>
+                                        <span>Total: {userData.public_repos}</span>
+                                    </div>
                                     <div className="row-separator"></div>
                                 </div>
                             </header>
