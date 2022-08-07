@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { DashBoard } from "../../components/DashBoard"
-import { Footer } from "../../components/Footer"
 import { NavBar } from "../../components/NavBar"
 import "./styles.css"
 
@@ -12,7 +11,6 @@ export function Home() {
         <>
             <NavBar setUserData={setUserData} setRepos={setRepos} />
             <DashBoard userData={userData} repos={repos} />
-            {/* <Footer /> */}
         </>
     )
 }

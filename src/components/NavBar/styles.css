@@ -5,10 +5,21 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+.container-icon-github {
+    display: flex;
+    align-items: center;
+}
+.container-icon-github svg {
+    margin-right: 10px;
+}
+.container-icon-github a {
+    text-decoration: none;
+    color: #d8d0cc;
+}
 .container-search {
     display: flex;
     align-items: center;
-    height: 30px;
+    height: 40px;
 }
 input[type=search] {
     width: 300px;
@@ -17,18 +28,18 @@ input[type=search] {
     background-color: #d8d0cc;
     color: #111111;
     border: none;
-    /* border-radius: 2px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0; */
     font-size: 15px;
-    transition-duration: .2s;}
+    transition-duration: .2s;
+}
 input[type=search]:focus {
-    outline: solid orange 2px;
+    outline: solid #71b7ff 2px;
 }
 .container-search button {
-    background-color: orange;
+    background-color: #71b7ff;
+    background-color: #71b8ffc1;
     color: white;
     border: none;
+    border: solid #71b7ff 1px;
     cursor: pointer;
     padding: 5px 10px;
     width: 120px;
@@ -39,5 +50,10 @@ input[type=search]:focus {
     border-radius: 2px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    transition-duration: .5s;
+    transition-duration: .8s;
+}
+.container-search button:hover {
+    background-color: transparent;
+    background-color: #71b7ff;
+    border: solid #71b7ff 1px;
 }
