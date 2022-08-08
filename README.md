@@ -27,6 +27,8 @@
 
 <strong>A proposta do sistema é a seguinte:</strong> Fazer um sistema em que a pessoa poderá pesquisar um usuário do GitHub através de um campo de texto, e quando ele pesquisar aparecerá informações públicas do usuário pesquisado. É um projeto simples, mas deu para concretizar muitos conceitos do React na prática. A forma com que peguei as informações do usuário buscado foi através da <a href="https://docs.github.com/en/rest" target="_blank">API</a> que o GitHub oferece. Enfim, como conclusão, esse sistema foi mais para concretizar meus aprendizados no <a href="https://pt-br.reactjs.org/">React</a> e partir para próximos conceitos da biblioteca.
 
+<strong>Link do Projeto em tempo real: </strong><a href="https://interface-api-github.netlify.app/">https://interface-api-github.netlify.app/</a>
+
 > <h2 id="pre-requisitos">✔️ Pré-requisitos</h2>
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
