@@ -38,7 +38,6 @@ export function DashBoard({ userData, repos }) {
             <main id="main-content">
                 <header>
                     <h1>{userData.name} <span>({userData.login})</span></h1>
-                    <strong>Alguma coisa</strong>
                 </header>
                 <div className="container-profile">
                     <div className="container-infos-user">

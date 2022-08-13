@@ -1,18 +1,25 @@
-import React from "react"
+import React, { useState } from "react"
 import { RiSearch2Line } from "react-icons/ri"
 import axios from "axios"
 import "./styles.css"
 
+import { toast } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.min.css'
+
 export function NavBar({ setUserData, setRepos }) {
+    const [ userNotFound, setUserNotFound ] = useState(null)
+
     async function getDataRepos(loginUser) {
         const repositorys = await (await axios.get(`https://api.github.com/users/${loginUser}/repos`)).data
         setRepos(repositorys)
     }
-
     async function addValueState() {
         let url = "https://api.github.com/users"
         let inputElement = document.querySelector("input[type=search]")
         let valueInput = inputElement.value
+        const notifyUserNotFound = () => toast.error(`"${valueInput}" não existe. Busque um usuário válido!`)
+        const notifyInputClear = () => toast.warn("Primeiro você precisa digitar um usuário para buscar!")
+        const notifySuccess = () => toast.success(`Usuário "${valueInput}" Encontrado!`, { autoClose: 2000 })
 
         if(valueInput != "") {
             try {
@@ -28,19 +35,21 @@ export function NavBar({ setUserData, setRepos }) {
                     location: data.location, 
                     bio: data.bio, 
                     public_repos: data.public_repos, 
-                    created_at: data.created_at, 
+                    created_at: data.created_at
                 }
                 setUserData(userData)
+                notifySuccess()
     
                 getDataRepos(userData.login)
-            } catch (error) {
-                console.log(error.response.data.message)
+            } catch(error) {
+                notifyUserNotFound()
             }
         } else {
+            notifyInputClear()
             setUserData("")
         }
     }
-    
+
     return (
         <nav>
             <div className="container-icon-github">
@@ -56,8 +65,7 @@ export function NavBar({ setUserData, setRepos }) {
                     type="search" 
                     placeholder="Digite o usuário do github aqui..."
                 />
-                <button 
-                    type="button" 
+                <button type="submit" 
                     onClick={() => addValueState()}
                 > 
                     Buscar...

@@ -12,17 +12,9 @@
     font-size: 40px;
     display: flex;
     flex-direction: column;
-    width: 34.5%;
+    width: 100%;
     border-bottom: solid #ffffff71 1px;
     padding-bottom: 10px;
-}
-#main-content header strong {
-    width: 62.8%;
-    height: 84px;
-    /* border-bottom: solid #ffffff71 1px; */
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
 }
 .container-profile {
     width: 100%;
@@ -138,6 +130,7 @@
 }
 .content-sem-user h2 {
     font-size: 60px;
+    text-align: center;
 }
 .response {
     font-size: 22px;
