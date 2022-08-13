@@ -62,13 +62,14 @@ $ npm run dev
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Axios](https://axios-http.com/) <img style="width: '20px'; height: 20px" src="https://th.bing.com/th/id/OIP.HqWlTIcp2pwO01z_Jyoy1AAAAA?pid=ImgDet&rs=1" />
-- [Node.js](https://nodejs.org/en/) <img style="width: '20px'; height: 20px" src="https://cdn-icons-png.flaticon.com/512/919/919825.png" />
-- [React](https://pt-br.reactjs.org/) <img style="width: '20px'; height: 20px" src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" />
-- [Vite](https://vitejs.dev/) <img style="width: '20px'; height: 20px" src="https://vitejs.dev/logo.svg" />
-- [HTML5](https://www.w3schools.com/html/) <img style="width: '20px'; height: 20px" src="https://cdn-icons-png.flaticon.com/512/174/174854.png" />
-- [CSS3](https://www.w3schools.com/Css/) <img style="width: '20px'; height: 20px" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" />
-- [JavaScript](https://www.javascript.com/) <img style="width: '20px'; height: 20px" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" />
+- <img style="width: '20px'; height: 20px" src="https://th.bing.com/th/id/OIP.HqWlTIcp2pwO01z_Jyoy1AAAAA?pid=ImgDet&rs=1" /> [Axios](https://axios-http.com/)
+- <img style="width: '20px'; height: 20px" src="https://cdn-icons-png.flaticon.com/512/919/919825.png" /> [Node.js](https://nodejs.org/en/)
+- <img style="width: '20px'; height: 20px" src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" /> [React](https://pt-br.reactjs.org/)
+- ⚙ [React-Toastify](https://fkhadra.github.io/react-toastify/introduction/)
+- <img style="width: '20px'; height: 20px" src="https://vitejs.dev/logo.svg" />[Vite](https://vitejs.dev/)
+- <img style="width: '20px'; height: 20px" src="https://cdn-icons-png.flaticon.com/512/174/174854.png" /> [HTML5](https://www.w3schools.com/html/)
+- <img style="width: '20px'; height: 20px" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" /> [CSS3](https://www.w3schools.com/Css/)
+- <img style="width: '20px'; height: 20px" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" /> [JavaScript](https://www.javascript.com/)
 
 ## Autor
 
